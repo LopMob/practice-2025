@@ -2,6 +2,12 @@ baseURL = "http://192.168.1.18:1313/"
 languageCode = "ru"
 title = "Сайт проекта"
 theme = "PaperMod"
+unsafe = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 defaultContentLanguage = "ru"
 
