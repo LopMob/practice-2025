@@ -1,0 +1,59 @@
+baseURL = "http://192.168.1.18:1313/"
+languageCode = "ru"
+title = "Сайт проекта"
+theme = "PaperMod"
+unsafe = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+defaultContentLanguage = "ru"
+
+[params]
+  defaultTheme = "auto"
+  ShowBreadCrumbs = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = true
+  showtoc = true
+  tocopen = false
+  ShowMenu = true
+
+# Для корректного отображения постов из /journal/
+mainSections = ["journal"]
+
+[menu]
+
+  [[menu.main]]
+  identifier = "home"
+  name = "Главная"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  identifier = "about"
+  name = "О проекте"
+  url = "/about/"
+  weight = 2
+
+  [[menu.main]]
+  identifier = "participants"
+  name = "Участники"
+  url = "/participants/"
+  weight = 3
+
+  [[menu.main]]
+  identifier = "journal"
+  name = "Журнал"
+  url = "/journal/"
+  weight = 4
+
+  [[menu.main]]
+  identifier = "resources"
+  name = "Ресурсы"
+  url = "/resources/"
+  weight = 5
+
